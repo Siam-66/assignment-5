@@ -68,13 +68,13 @@
         </nav>
         <section class="pb-5 mt-6 ">
             <div class="flex justify-center gap-10 text-xl">
-            <button class=" border-2 colo-2 py-2 px-3 rounded-md">Donation</button>
-            <button class=" border-2 colo-2 py-2 px-5 rounded-md">History</button>
+            <button id="show-donation-btn" class=" border-2 bg-white   py-2 px-3 rounded-md">Donation</button>
+            <button id="show-history-btn" class=" border-2  bg-white py-2 px-5 rounded-md">History</button>
             </div>
         </section>
     </header>
 
-    <section class="container mx-auto mb-20 max-sm:px-5">
+    <section id="donate-section" class="  container mx-auto mb-20 max-sm:px-5">
         <div class="card card-side bg-base-100 border-2  mb-14 flex flex-col md:flex-row">
             <figure class="p-8 w-full md:w-2/5">
                 <img src="assets/noakhali.png" />
@@ -93,7 +93,25 @@
                 <p class="colo-3 text-justify md:text-xl mb-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <input id="donate-noakhali" type="email" placeholder="Write Donation Amount" class="input input-bordered py-7 mb-3" required />
                 <div class="card-actions">
-                    <button id="btn-noakhali" class=" colo-1 colo-2 py-2 px-3 rounded-md w-full text-xl md:text-2xl font-bold py-3 ">Donate Now</button>
+                    <button id="btn-noakhali" class=" colo-1 colo-2 py-2 px-3 rounded-md w-full text-xl md:text-2xl font-bold py-3 " >Donate Now</button>
+                
+                
+                    <dialog id="my_modal_1" class="modal text-center">
+                        <div class="modal-box">
+                            <h2 class="text-4xl font-bold">Congrats!</h3>
+                                <div class="flex justify-center mt-3">
+                                    <img src="assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 text-gray-600">You have donate for humankind</p>
+                                <h4 class="text-lg font-bold">Successfully</h4>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <button class="btn">Close confirmation</button>
+                                    </form>
+                                </div>
+                        </div>
+                    </dialog>
+                
                 </div>
             </div>
         </div>
@@ -112,11 +130,29 @@
                      <div class="text-[#111111B3] font-bold" >BDT</div>
     
                     </div>
-                <h2 class="card-title text-2xl md:text-3xl mb-5">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <h2 class="card-title  text-2xl md:text-3xl mb-5">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="colo-3 text-justify md:text-xl mb-3"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <input id="donate-feni" type="email" placeholder="Write Donation Amount" class="input input-bordered py-7 mb-3" required />
                 <div class="card-actions">
                     <button id="btn-feni" class=" colo-1 colo-2 py-2 px-3 rounded-md w-full text-xl md:text font-bold py-3 ">Donate Now</button>
+                
+                
+                    <dialog id="my_modal_1" class="modal text-center">
+                        <div class="modal-box">
+                            <h2 class="text-4xl font-bold">Congrats!</h3>
+                                <div class="flex justify-center mt-3">
+                                    <img src="assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 text-gray-600">You have donate for humankind</p>
+                                <h4 class="text-lg font-bold">Successfully</h4>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <button class="btn">Close confirmation</button>
+                                    </form>
+                                </div>
+                        </div>
+                    </dialog>
+
                 </div>
             </div>
         </div>
@@ -140,6 +176,23 @@
                 <input id="donate-quota" type="email" placeholder="Write Donation Amount" class="input input-bordered py-7 mb-3" required />
                 <div class="card-actions">
                     <button id="btn-quota" class=" colo-1 colo-2 py-2 px-3 rounded-md w-full text-xl md:text font-bold py-3 ">Donate Now</button>
+                
+                    <dialog id="my_modal_1" class="modal text-center">
+                        <div class="modal-box">
+                            <h2 class="text-4xl font-bold">Congrats!</h3>
+                                <div class="flex justify-center mt-3">
+                                    <img src="assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 text-gray-600">You have donate for humankind</p>
+                                <h4 class="text-lg font-bold">Successfully</h4>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <button class="btn">Close confirmation</button>
+                                    </form>
+                                </div>
+                        </div>
+                    </dialog>
+                
                 </div>
             </div>
         </div>
@@ -147,8 +200,9 @@
     </section>
 
     <section>
-        <div id="history-section" class="">
-            <h2 class="text-3xl text-center">Donate History</h2>
+        <div id="history-section" class=" hidden container mx-auto">
+            <h2 class="text-3xl text-center mb-10">Donate History</h2>
+            <div class="divider"></div>
             <div id="history-container" class="space-y-3">
 
             </div>
@@ -163,6 +217,6 @@
 <script src="Js/noakhali.js"></script>
 <script src="Js/feni.js"></script>
 <script src="Js/quota.js"></script>
-
+<script src="Js/btnHide.js"></script>
 </body>
 </html>

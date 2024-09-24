@@ -23,6 +23,8 @@ document.getElementById('btn-feni')
             const newDonate = donate + addMoney;
 
             document.getElementById('account-feni').innerText = newDonate;
+
+            document.getElementById('my_modal_1').showModal();
         
         
         }
@@ -42,9 +44,10 @@ document.getElementById('btn-feni')
 
 
             const div = document.createElement('div');
-            div.classList.add('border-2');
+            div.className = "border rounded-[16px] p-4 space-y-4"
             div.innerHTML = `
-                <h4>${addMoney} Taka is Donate for Flood Relief in Feni, Bangladesh </h4>
+                <h4 class="text-2xl font-bold">${addMoney} Taka is Donate for Flood Relief in Feni,Bangladesh </h4>
+                <p class="text-gray-500 font-light text-base bg-slate-50 rounded-lg p-2" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
             `
 
             document.getElementById('history-container').appendChild(div);
