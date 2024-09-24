@@ -13,8 +13,8 @@ document.getElementById('btn-quota')
             return;
         }
 
-        if(addMoney < 0 ){
-            alert('Negative numbers not allowed');
+        if(addMoney <= 0 ){
+            alert('Write the correct amount you want to donate');
             return;
         }
 
