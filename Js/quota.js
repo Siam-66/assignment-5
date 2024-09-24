@@ -24,7 +24,6 @@ document.getElementById('btn-quota')
 
             document.getElementById('account-quota').innerText = newDonate;
         
-            document.getElementById('my_modal_1').showModal();
         
         }
 
@@ -40,6 +39,8 @@ document.getElementById('btn-quota')
             const newBalance = balance - addMoney;
 
             document.getElementById('account-balance').innerText = newBalance;
+
+            document.getElementById('my_modal_1').showModal();
 
 
             const div = document.createElement('div');

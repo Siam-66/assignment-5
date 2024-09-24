@@ -24,7 +24,7 @@ document.getElementById('btn-feni')
 
             document.getElementById('account-feni').innerText = newDonate;
 
-            document.getElementById('my_modal_1').showModal();
+            
         
         
         }
@@ -42,6 +42,7 @@ document.getElementById('btn-feni')
 
             document.getElementById('account-balance').innerText = newBalance;
 
+            document.getElementById('my_modal_1').showModal();
 
             const div = document.createElement('div');
             div.className = "border rounded-[16px] p-4 space-y-4"

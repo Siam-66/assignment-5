@@ -13,7 +13,7 @@ document.getElementById('btn-noakhali')
             return;
         }
 
-        if(addMoney <= 0 ){
+        if(addMoney <= 0){
             alert('Write the correct amount you want to donate');
             return;
         }
@@ -25,7 +25,6 @@ document.getElementById('btn-noakhali')
 
             document.getElementById('account-noakhali').innerText = newDonate;
         
-            document.getElementById('my_modal_1').showModal();
 
         }
 
@@ -42,7 +41,8 @@ document.getElementById('btn-noakhali')
             const newBalance = balance - addMoney;
 
             document.getElementById('account-balance').innerText = newBalance;
-
+ 
+            document.getElementById('my_modal_1').showModal();
 
             const div = document.createElement('div');
             div.className = "border rounded-[16px] p-4 space-y-4"
